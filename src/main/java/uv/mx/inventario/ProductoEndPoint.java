@@ -24,7 +24,7 @@ public class ProductoEndPoint {
             producto.setNombre(peticion.getNombre());
             producto.setDescripcion(peticion.getDescripcion());
             producto.setPrecio(peticion.getPrecio());
-            producto.setCantidad(peticion.getCantidad());
+            producto.setCantidad(peticion.getStock());
             newProducto.save(producto);
             respuesta.setMensaje("Producto agregado.");
 
